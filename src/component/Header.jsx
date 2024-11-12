@@ -42,11 +42,19 @@ function Header() {
                             </ol>
                         </div>
                         <div>
-                            Eng
+                            <select className='bg-transparent   '>
+                                <option className='bg-[#1B6392] hover:bg-blue-950 ' value="someOption">ENG</option>
+                                <option className='bg-[#1B6392] hover:bg-blue-950' value="someOption">AR</option>
+                                <option className='bg-[#1B6392] hover:bg-blue-950' value="someOption">DE</option>
+
+                            </select>
                         </div>
                         <div>
-                            USD
-                        </div>
+                            <select className='bg-transparent'>
+                                <option className='bg-[#1B6392] hover:bg-blue-950  ' value="someOption">USD</option>
+                                <option className='bg-[#1B6392] hover:bg-blue-950 ' value="someOption">EGP</option>
+
+                            </select></div>
                     </div>
                 </div>
                 <div className='bg-[#1B6392] h-[88px] flex justify-center items-center'>
@@ -118,7 +126,9 @@ function Header() {
                         </div>
                     </div>
                     <div className='flex   items-center max-lg:hidden '>
-                        <img className='w-[24px] h-[24px]' src={phon}/> +1-202-555-0104
+                        <a href="tel:+1-202-555-0104"><img src={phon} alt="Call +1-202-555-0104"/></a>
+
+                        +1-202-555-0104
                     </div>
 
                 </div>

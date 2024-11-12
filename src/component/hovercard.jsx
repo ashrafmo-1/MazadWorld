@@ -22,9 +22,9 @@ const ProductCardHover = ({img,tit,pri}) => {
                     </button>
                 </div>
             </div>
-            <div className="   text-start end-0 ">
-                <p className="[font-family:'Public_Sans',sans-serif]  text-[#191c1f]  max-md:text-sm">{tit}</p>
-                <p className="[font-family:'Public_Sans',sans-serif]  font-semibold text-[#2da5f3]  ">${pri}</p>
+            <div className="   text-start  h-[68px] pt-4  ">
+                <p className=" text-[#191c1f]  max-md:text-sm">{tit}</p>
+                <p className="  font-semibold text-[#2da5f3]  ">${pri}</p>
             </div>
         </div>
     );

@@ -9,6 +9,7 @@ import Hovercard from "./hovercard";
 import ProductCardHover from "./hovercard";
 import DiscountBanner1 from "./DiscountBanner1";
 import SvgIcon2 from "./ProductCardWidget5/icons/SvgIcon2";
+import Lastnews from "./lastnews";
 
 function Main() {
     return (<>
@@ -117,30 +118,30 @@ function Main() {
             </div>
 
         </div>
-        <div className="flex justify-center  items-stretch flex-col gap-[72px]  box-border pt-6 pb-[72px]">
+        <div className="flex justify-center  items-stretch flex-col gap-[72px]  box-border pt-6 ">
 
             <div className="flex justify-start items-stretch flex-col grow-0 shrink-0 basis-auto px-[35px]">
-                <p className="[font-family:'Public_Sans',sans-serif] text-[32px] max-md:text-lg font-semibold text-center text-[#191c1f] grow-0 shrink-0 basis-auto mx-[23px] m-0 ">Shop
+                <p className="[font-family:'Public_Sans',sans-serif] text-[32px] max-md:text-lg font-semibold text-center mt-[50px] text-[#191c1f] grow-0 shrink-0 basis-auto mx-[23px] m-0 ">Shop
                     with Categorys</p>
-                <div className="flex justify-center gap-4 mt-10">
+                <div className="flex justify-center gap-4 mt-4">
                     <MainSlider/>
                 </div>
             </div>
         </div>
         <div className=" flex justify-center  items-center flex-col ">
 
-            <div className="flex justify-center  items-stretch flex-col gap-[72px]   pt-6 pb-[72px]">
+            <div className="flex justify-center  items-stretch flex-col gap-[72px]   pt-6 ">
 
                 <div
-                    className="flex justify-start items-start flex-row  pt-7 self-center gap-4 shrink-0 basis-auto box-border">
-                    <div className='pt-7 h-[300px]'><ProductDisplayContainer/></div>
+                    className="flex justify-start items-start flex-row  pt-[50px]  self-center gap-4 shrink-0 basis-auto box-border">
+                    <div className='pt-[10px]  h-[400px]'><ProductDisplayContainer/></div>
                     <div>
 
-                        <div className="grow shrink-0 basis-auto ml-[23px]">
+                        <div className="grow shrink-0   basis-auto ml-[23px]">
 
                             <div
-                                className="flex justify-between items-center flex-row gap-2 w-[100.00%] box-border">
-                                <p className=" text-2xl max-md:text-sm font-semibold text-[#191c1f] grow-0 shrink-0 basis-auto m-0 p-0">Featured
+                                className="flex  justify-between items-center flex-row gap-2 w-[100.00%] box-border">
+                                <p className=" text-2xl  max-md:text-sm font-semibold text-[#191c1f] grow-0 shrink-0 basis-auto m-0 p-0">Featured
                                     Products</p>
                                 <div
                                     className="flex justify-start items-center flex-row grow-0 shrink-0 basis-auto">
@@ -177,7 +178,7 @@ function Main() {
                                 </div>
                             </div>
                             <div
-                                className=" bg-[white]    gap-2  grid grid-cols-4  max-lg:grid-cols-3   max-md:grid-cols-2     ">
+                                className=" bg-[white] pt-[15px]   gap-2  grid grid-cols-4  max-lg:grid-cols-3   max-md:grid-cols-2     ">
                                 <Hovercard img='/assets/image_291e5106.png'
                                            tit='Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear...'
                                            pri='2,300'/>
@@ -319,6 +320,7 @@ function Main() {
                 </div>
             </div>
         </div>
+        <div><Lastnews/></div>
     </>);
 }
 

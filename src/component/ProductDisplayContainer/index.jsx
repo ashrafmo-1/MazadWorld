@@ -3,7 +3,7 @@ import {Button} from "@mui/base";
 function ProductDisplayContainer() {
     return (
         <div
-            className=" bg-[#f3de6d] max-xl:hidden box-border flex justify-start items-stretch flex-col grow-0 shrink-0 basis-auto pt-8 rounded-[3px]">
+            className=" bg-[#f3de6d] max-xl:hidden box-border flex justify-start items-stretch flex-col grow-0 shrink-0 basis-auto pt-8 h-[650px]    rounded-[3px]">
             <div className="flex justify-start items-stretch flex-col grow-0 shrink-0 basis-auto pl-[17px] pr-[18px]">
                 <p className="[font-family:'Public_Sans',sans-serif] text-sm font-semibold text-center text-[#be4646] grow-0 shrink-0 basis-auto ml-3.5 mr-[13px] m-0 p-0">COMPUTER &amp; ACCESSORIES</p>
                 <p className="[font-family:'Public_Sans',sans-serif] text-[32px] font-semibold text-center text-[#191c1f] grow-0 shrink-0 basis-auto ml-3.5 mr-[13px] mt-2 m-0 p-0">32%
