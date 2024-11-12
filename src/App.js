@@ -1,13 +1,11 @@
-import Header from "./com/Header.jsx";
-import Footer from "./com/Footer.jsx";
-import Main from "./com/index.jsx";
-import Header2 from "./com/hed";
+import Header from "./component/Header.jsx";
+import Footer from "./component/Footer.jsx";
+import Main from "./component";
 
 function App() {
 
   return (
       <>
-          {/*<Header2/>*/}
         <Header/>
         <Main/>
         <Footer/>
