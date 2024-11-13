@@ -13,6 +13,8 @@ import map from '../img/MapPinLine.svg'
 import hedset from '../img/Vector.svg'
 import MegaMenu from "./megamen.jsx";
 import {useState} from "react";
+import LoginFlot from "./loginflot";
+import Cartflot from "./cartflot";
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -69,9 +71,9 @@ function Header() {
                         </div>
                         <div
                             className='flex justify-center items-center max-sm:mx-auto gap-2.5'>
-                            <button><img src={car} className='w-[32px]  h-[32px]'/></button>
+                            <Cartflot/>
                             <button><img src={fav} className='w-[32px]  h-[32px]'/></button>
-                            <button><img src={usre} className='w-[32px] h-[32px]'/></button>
+                            <LoginFlot/>
                             {isOpen && (
                                 <div
                                     className="fixed inset-0 bg-black bg-opacity-50 z-20 transition-opacity"
@@ -141,7 +143,7 @@ function Header() {
                 <div className="p-4 text-lg font-bold">All Category</div>
                 <nav className="p-4">
                     <div className='flex flex-col items-start gap-10'>
-                        <MegaMenu />
+                        <MegaMenu/>
                         <button className=' flex  h-[24px] text-sm w-[107px] items-center justify-center gap-1'>
                             <img
                                 className='flex w-[24px] h-[24px]' src={map}/> track order
