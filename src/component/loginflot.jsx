@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import Aro from '../img/ArrowRight.svg';
 import usre from '../img/User.png'
 
@@ -19,8 +19,8 @@ const LoginFlot = () => {
                     className="absolute flex flex-col items-center rounded-xl   right-1 top-[45px] bg-white shadow-lg p-3 text-sm h-[444px] w-[424px] ">
                     <div>
                         <h1 className='text-xl  pt-5 font-semibold'>
-                        Sign in to your account
-                    </h1>
+                            Sign in to your account
+                        </h1>
                     </div>
 
 
@@ -45,8 +45,9 @@ const LoginFlot = () => {
                         </div>
                         <div className='flex justify-center mt-3'>Don’t have account</div>
                         <button
-                            className='bg-white mt-3 h-[48px] w-[360px] flex justify-center items-center gap-2 text-sm font-semibold text-[#FA8232]  border-[#FFE7D6] border shadow-[#FFE7D6] mx-5'> CREATE ACCOUNT <img
-                            src={Aro}/></button>
+                            className='bg-white mt-3 h-[48px] w-[360px] flex justify-center items-center gap-2 text-sm font-semibold text-[#FA8232]  border-[#FFE7D6] border shadow-[#FFE7D6] mx-5'> CREATE
+                            ACCOUNT <img
+                                src={Aro}/></button>
 
                     </div>
 
