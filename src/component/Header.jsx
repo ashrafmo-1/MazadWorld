@@ -15,6 +15,7 @@ import MegaMenu from "./megamen.jsx";
 import {useState} from "react";
 import LoginFlot from "./loginflot";
 import Cartflot from "./cartflot";
+import {Link} from "react-router-dom";
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -34,9 +35,9 @@ function Header() {
                     </div>
                     <div
                         className='flex mx-auto max-h-[28px] max-w-[396px] gap-6 items-center max-sm:justify-center max-sm:px-2 '>
-                        <div className='flex gap-4'>
+                        <div className='flex gap-4 max-sm:gap-2'>
                             Follow us :
-                            <ol className='flex gap-2 max-sm:justify-center items-center'>
+                            <ol className='flex gap-2 max-sm:gap-1 max-sm:justify-center items-center'>
                                 <li><a href='https://x.com/' target='_blank'><img src={Twitter}/></a></li>
                                 <li><a href='https://www.facebook.com/' target='_blank'><img src={fa}/></a></li>
                                 <li><a href='https://www.youtube.com/' target='_blank'><img src={youtube}/></a></li>
@@ -61,8 +62,8 @@ function Header() {
                 </div>
                 <div className='bg-[#1B6392] h-[88px] flex justify-center items-center'>
                     <div className='mr-4 flex gap-24 max-lg:gap-0 max-lg:px-8 max-xl:px-8 '>
-                        <img src={logo}
-                             className='w-[177px] h-[48px] max-sm:w-16 max-sm:h-10 max-sm:ml-2.5 max-lg:w-[140px] max-xl:w-[200px] '/>
+                        <Link to='/'> <img src={logo}
+                                           className='w-[177px] h-[48px] max-sm:w-16 max-sm:h-10 max-sm:ml-2.5 max-lg:w-[140px] max-xl:w-[200px] '/></Link>
 
                         <div className='w-[546px] h-[48px] flex items-center justify-center max-sm:hidden'>
 
@@ -77,7 +78,7 @@ function Header() {
                             {isOpen && (
                                 <div
                                     className="fixed inset-0 bg-black bg-opacity-50 z-20 transition-opacity"
-                                    onClick={toggleDrawer}
+                                    onMouseEnter={toggleDrawer}
                                 />
                             )}
                             <button className='sm:hidden' onClick={toggleDrawer}>

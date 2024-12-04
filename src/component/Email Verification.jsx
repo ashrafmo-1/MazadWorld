@@ -1,13 +1,10 @@
-import Header from "./Header";
-import Footer from "./Footer";
 import Aro from "../img/ArrowRight.svg";
 import React from "react";
-import Google from "../img/Google.png";
-import Apple from "../img/Apple.png";
+import Navgit from "./navgbar";
 
 function EmailVerification() {
     return (<>
-        <Header/>
+        <Navgit/>
         <div className='flex   items-center justify-center  pt-4 pb-28 sm:my-[20px]'>
             <div className='w-[424px] h-[400px] max-sm:w-[300px] shadow-2xl pb-10 mt-10  text-xl font-semibold '>
                 <div
@@ -27,7 +24,8 @@ function EmailVerification() {
                 </div>
                 <div className='bg-white h-[48px] mt-8  mx-auto w-[360px]  max-sm:w-[280px]  '>
                     <button
-                        className='bg-[#FA8232] h-[48px] w-[360px]  max-sm:w-[280px] flex justify-center items-center gap-1 text-sm font-semibold text-white text-center  uppercase  rounded'> Verify me<img
+                        className='bg-[#FA8232] h-[48px] w-[360px]  max-sm:w-[280px] flex justify-center items-center gap-1 text-sm font-semibold text-white text-center  uppercase  rounded'> Verify
+                        me<img
                             src={Aro}/></button>
 
 
@@ -36,7 +34,7 @@ function EmailVerification() {
             </div>
 
         </div>
-        <Footer/>
+
     </>)
 }
 

@@ -1,28 +1,26 @@
-
-
-import {Navigation, Pagination, Scrollbar, A11y} from "swiper/modules";
-
-import {Swiper, SwiperSlide} from "swiper/react";
-
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper/modules"; // Import Autoplay
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-
 function MainSlider() {
-    return (<Swiper
-            // install Swiper modules
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
+    return (
+        <Swiper
+            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]} // Add Autoplay module
             navigation={true}
+            loop={true}
+            autoplay={{
+                delay: 1500, // Delay between slides (in milliseconds)
+                disableOnInteraction: false, // Allow autoplay to continue after user interaction
+            }}
             breakpoints={{
                 320: { slidesPerView: 1 },
                 768: { slidesPerView: 4 },
-                1024: { slidesPerView: 6},
-
+                1024: { slidesPerView: 6 },
             }}
-
-            pagination={true}
+            pagination={{ clickable: true }} // Make pagination clickable
         >
             <SwiperSlide>
                 <div className='flex mb-11 border  w-[205px] h-[236px]  items-center justify-center flex-col '>

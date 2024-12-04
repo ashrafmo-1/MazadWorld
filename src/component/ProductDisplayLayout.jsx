@@ -3,14 +3,16 @@ import CardSlider from "./sliderMain.jsx";
 import Slider1 from "./slider1o.jsx";
 import {Button} from "@mui/base";
 import SvgIcon1 from "./ProductCardWidget1/icons/SvgIcon1.jsx";
+import Newswiper from "./newswiper";
 
 function ProductDisplayLayout() {
     return (
         < div className='flex justify-center items-center'>
 
                 <div className="grid-cols-[872px_424px] grid lg:px-14 pb-4 gap-4     max-xl:grid-cols-[800px] max-xl:gap-4  max-lg:grid-cols-[750px] max-md:px-4 max-md:grid-cols-1 ">
-                    <div className='flex'>
-                        <CardSlider/>
+                    <div className='flex h-full w-full  bg-[#f2f4f5]'>
+                        {/*<CardSlider/>*/}
+                        <Newswiper/>
                     </div>
                     <div className="flex  max-sm:flex-col xl:flex-col max-sm:w-[300px] justify-center items-center gap-4 shrink-0  box-border   ">
                         <div
